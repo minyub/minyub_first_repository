@@ -1,0 +1,19 @@
+@font-face {
+    font-family: '오뮤_다예쁨체';
+    src: url('/public/fonts/오뮤_다예쁨체.ttf') format('truetype');
+  }
+  
+  .subway-item {
+    /* 기존 스타일 */
+    font-family: '오뮤_다예쁨체', sans-serif; /* 지하철 이름에 폰트 적용 */
+  }
+  
+
+  .subway-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+
+  

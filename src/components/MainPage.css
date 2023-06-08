@@ -1,0 +1,64 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+  }
+  
+
+  .banner-section {
+    height: 10%; /* 상단 10%를 배너로 설정 */
+    background-color: black; /* 배너의 배경색 설정 */
+    /*background-image: url('./banner.jpg');*/
+    background-repeat: repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding : 0 40px;
+  }
+
+  .banner-title + .banner-title {
+    margin-left: 40px; /* 수정: 왼쪽에 40px 간격 추가 */
+  }
+  
+ 
+
+  .photo-section {
+    height: 90%;
+    position: relative;
+;
+    
+  }
+  
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:white;
+    image-rendering: -webkit-optimize-contrast; /* 웹킷 브라우저 (Chrome, Safari) */
+    image-rendering: -moz-crisp-edges; /* 파이어폭스 */
+    image-rendering: crisp-edges; /* IE */
+    -ms-interpolation-mode: nearest-neighbor; /* IE (비표준 속성) */
+    
+  }
+  
+
+  @font-face {
+    font-family: 'OmuDayeppeumche';
+    src: url('../../public/fonts/오뮤_다예쁨체.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'The Jamsil 4 Medium';
+    src: url('../../public/fonts/The Jamsil 4 Medium.ttf') format('truetype');
+  }
+  
+  .banner-title {
+    font-family: 'The Jamsil 4 Medium', sans-serif;
+    color: #fff;
+    margin: 0;
+  }
+
+  
+  
